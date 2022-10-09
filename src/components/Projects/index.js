@@ -15,6 +15,7 @@
 import Link from "@docusaurus/Link";
 import React from "react";
 import styles from "./index.module.css";
+import clsx from "clsx";
 
 const projects = [
     {
@@ -58,7 +59,7 @@ function Project(project) {
 export default function Projects() {
     return (
         <section className={styles.projects}>
-            <div className={styles.projectsContainer}>
+            <div className={clsx(styles.projectsContainer, 'indexContainer')}>
                 {projects.map((project, index) => (
                     <Project key={index} {...project} />
                 ))}

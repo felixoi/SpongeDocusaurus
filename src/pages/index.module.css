@@ -32,6 +32,7 @@
 
 .heroSubtitle {
   color: var(--ifm-color-gray-800);
+  margin-bottom: var(--ifm-heading-margin-bottom);
 }
 
 [data-theme='dark'] .heroSubtitle {

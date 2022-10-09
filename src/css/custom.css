@@ -10,12 +10,15 @@
   --ifm-color-primary-dark: #917300;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-light: #f7cf0d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
 
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --docsearch-container-background: rgba(24,24,24,0.8) !important;
+  --docsearch-logo-color: var(--ifm-color-primary) !important;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -29,6 +32,21 @@
   --ifm-color-primary-lightest: #FDF5CE;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-background-color: #232323 !important;
+}
+
+[data-theme='dark'], .navbar {
+  --docsearch-searchbox-background: #1E1E1E !important;
+  --docsearch-searchbox-focus-background: #181818 !important;
+  --docsearch-modal-background: #181818 !important;
+  --docsearch-footer-background: #181818 !important;
+  --docsearch-key-gradient: #f7cf0d !important;
+  --docsearch-key-shadow: inset 0 -2px 0 0 #7B6706,inset 0 0 1px 1px #C5A50A,0 5px 5px 0 rgba(24, 24, 24, 0.3) !important;
+  --docsearch-logo-color: var(--ifm-color-gray-600) !important;
+  --docsearch-container-background: rgba(24,24,24,0.8) !important;
+  --docsearch-muted-color: var(--ifm-color-gray-600) !important;
+  --docsearch-footer-shadow: inset 0 1px 0 0 var(--ifm-color-gray-900),0 -4px 8px 0 rgba(24,24,24,0.5) !important;
+  --docsearch-modal-shadow: inset 1px 1px 0 0 var(--ifm-color-gray-900),0 3px 8px 0 #000309 !important;
+  --docsearch-text-color: var(--ifm-color-gray-600) !important;
 }
 
 .navbar {
@@ -82,4 +100,28 @@
   .heroBanner {
     padding: 2rem;
   }
+}
+
+.indexContainer {
+  width: 85%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.DocSearch-Button {
+  border-radius: 6px !important;
+}
+
+.searchContainer .DocSearch-Button {
+  width: 100%;
+  height: 3.5em;
+  padding: 10px 15px;
+}
+
+.searchContainer .DocSearch-Button-Placeholder {
+  display: flex;
+}
+
+.DocSearch-Commands-Key, .DocSearch-Button-Key {
+  color: #000 !important;
 }
