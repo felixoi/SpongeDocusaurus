@@ -1,0 +1,50 @@
+/**
+ * Copyright © 2022 PaperMC and Contributors
+ * Copyright © 2022 SpongePowered and Contributors (changes only)
+ *
+ * This file is a modified copy of
+ * https://github.com/PaperMC/docs/blob/9b37f1d1cdbf275c78d0701e343687cfd718cb68/src/css/projects.module.css
+ * which is licensed under the Creative Commons Attribution Share Alike 4.0 International license
+ * (https://creativecommons.org/licenses/by-sa/4.0/). This file is published under the same license.
+ * A copy of the license including the warranty disclaimer can also be found in this directory.
+ * The original author is e-im (evan) and only minimal changes were made:
+ * - Changed max-width and padding of the projectsContainer class
+ */
+
+.flex {
+    flex-grow: 1;
+}
+
+.project {
+    display: flex;
+    border-radius: 6px;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    padding: var(--ifm-global-spacing);
+    margin: 24px 0;
+    align-items: center;
+}
+
+.project p {
+    padding-right: 0.8em;
+    color: var(--ifm-color-emphasis-800);
+    margin: 0;
+}
+
+.projectGitHub {
+    color: var(--ifm-link-color);
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectsContainer {
+    width: 85%;
+    max-width: 700px;
+    padding-top: 3rem;
+}

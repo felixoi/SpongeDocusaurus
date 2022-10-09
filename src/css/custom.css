@@ -6,25 +6,80 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary: #B39608;
+  --ifm-color-primary-dark: #917300;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
+
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #f7cf0d;
+  --ifm-color-primary-dark: #C5A50A;
+  --ifm-color-primary-darker: #7B6706;
+  --ifm-color-primary-darkest: #312902;
+  --ifm-color-primary-light: #F8D83D;
+  --ifm-color-primary-lighter: #FBE786;
+  --ifm-color-primary-lightest: #FDF5CE;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-background-color: #232323 !important;
+}
+
+.navbar {
+  --ifm-navbar-background-color: #333;
+  --ifm-navbar-link-hover-color: #f7cf0d;
+}
+
+[data-theme='light'] .navbar {
+  --ifm-color-emphasis-200: var(--ifm-color-emphasis-800);
+}
+
+.navbar__brand {
+  margin-right: 0;
+}
+
+.navbar__logo {
+  margin: 0;
+}
+
+.footer {
+  --ifm-link-color: #f7cf0d !important;
+  --ifm-footer-background-color: #282828;
+  --ifm-footer-padding-vertical: var(--ifm-spacing-vertical);
+}
+
+[data-theme='dark'] .footer {
+  --ifm-footer-background-color: #1E1E1E;
+}
+
+.font-size-90 {
+  font-size: 90%;
+}
+.font-size-80 {
+  font-size: 80%;
+}
+
+.license, .license .license-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 996px) {
+  .license {
+    flex-flow: column;
+    margin-top: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
 }

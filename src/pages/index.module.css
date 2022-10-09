@@ -8,7 +8,36 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-color: #f7cf0d;
+  opacity: 1;
+  background-image: radial-gradient(#deba0b 0.2px, #f7cf0d 0.2px);
+  background-size: 4px 4px;
 }
+
+[data-theme='dark'] .heroBanner {
+  color: white;
+  background-color: #282828;
+  opacity: 1;
+  background-image: radial-gradient(#232323 0.2px, #282828 0.2px);
+  background-size: 4px 4px;
+}
+
+.heroTitle {
+  color: #333;
+}
+
+[data-theme='dark'] .heroTitle {
+  color: var(--ifm-color-primary);
+}
+
+.heroSubtitle {
+  color: var(--ifm-color-gray-800);
+}
+
+[data-theme='dark'] .heroSubtitle {
+  color: var(--ifm-color-gray-100);
+}
+
 
 @media screen and (max-width: 996px) {
   .heroBanner {
@@ -16,8 +45,7 @@
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.mascot {
+  height: 10rem;
+  width: auto;
 }

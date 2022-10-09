@@ -6,13 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'SpongePowered Documentation',
+  title: 'Sponge Documentation',
   tagline: 'Documentation for all projects under the SpongePowered organization.',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -50,10 +50,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        style: 'dark',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'SpongePowered Logo',
           src: 'img/logo.svg',
+          height: 40,
         },
         items: [
           {
@@ -108,7 +109,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SpongePowered`,
       },
       prism: {
         theme: lightCodeTheme,
